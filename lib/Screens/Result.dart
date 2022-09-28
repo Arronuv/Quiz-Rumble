@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizrumble/Screens/currentTest.dart';
-import 'package:quizrumble/Screens/home.dart';
 import 'package:quizrumble/worker.dart';
-
 import '../apptheme.dart';
 
 class Result extends StatefulWidget {
@@ -65,8 +62,7 @@ class _ResultState extends State<Result> {
         padding: const EdgeInsets.all(30.0),
         child: Text(
           "Thanks for Playing !!!",
-          style:appTheme.getStyle(
-              30.0, Colors.white, FontWeight.bold),
+          style: appTheme.getStyle(30.0, Colors.white, FontWeight.bold),
         ),
       ),
     ));
@@ -83,7 +79,6 @@ class _ResultState extends State<Result> {
       )),
     ));
 
-
     body.add(Container(
       padding: const EdgeInsets.fromLTRB(20.0, 70.0, 20.0, 12.0),
       child: MaterialButton(
@@ -91,7 +86,7 @@ class _ResultState extends State<Result> {
         minWidth: MediaQuery.of(context).size.width * 0.7,
         height: MediaQuery.of(context).size.height * 0.07,
         shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
         color: Colors.white,
         onPressed: () {
           Navigator.of(context).pop();
@@ -100,8 +95,8 @@ class _ResultState extends State<Result> {
         },
         child: Text(
           "Exit",
-          style: appTheme.getStyle(
-              20.0, widget.backcolor.first, FontWeight.bold),
+          style:
+              appTheme.getStyle(20.0, widget.backcolor.first, FontWeight.bold),
         ),
       ),
     ));

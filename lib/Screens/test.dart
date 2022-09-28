@@ -141,7 +141,7 @@ class _TestPageState extends State<TestPage> {
           color: Colors.white,
           onPressed: () {
             setState(() {
-              if (y+1 == r) {
+              if (y + 1 == r) {
                 score++;
               }
               if (i < testSet.ques.length - 1) {
